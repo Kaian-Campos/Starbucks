@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+header .line {
+    background-color: #117050;
+    height: 10px;
+}
+.h-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.logo img {
+    width: 64px;
+    height: 64px;
+}
+.h-search {
+    display: flex;
+    align-items: center;
+}
+.h-search form {
+    display: flex;
+    align-items: center;
+}
+.h-search input {
+    font-size: 16px;
+    padding: 7px 13px;
+    border: 1px solid #adadad;
+    color: #444;
+    outline: 0;
+    width: 260px;
+    font-family: inherit;
+}
+.h-search input::placeholder {
+    color: #999;
+}
+.h-search button {
+    border: 0;
+    background: transparent;
+    margin: 2px 0 0 -25px;
+    cursor: pointer;
+    outline: 0;
+}
+.h-search button img {
+    width: 16px;
+    height: 16px;
+}
+.h-menu {
+    display: flex;
+    height: 28px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.banner {
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 90px 0 55px;
+}
+.cont-p {
+    padding: 0 25px;
+}
+.banner h1 {
+    font-size: 96px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 1.1;
+    margin: 0 20px 0 -2px;
+}
+.banner p {
+    margin: 40px 2px 22px -2px;
+}
+.b-imgs img {
+    width: 160px;
+    height: 160px;
+    border: 6px solid #117050;
+    border-radius: 50%;
+    margin: 44px 18px;
+}
