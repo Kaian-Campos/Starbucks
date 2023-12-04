@@ -11,6 +11,7 @@ body {
 .container {
     max-width: 1140px;
     margin: auto;
+    padding: clamp(0rem, 72.5rem + -100vw, 1.25rem);
 }
 .bar {
     background-color: #006341;
@@ -18,7 +19,7 @@ body {
     height: 22px;
 }
 h1 {
-    font-size: 96px;
+    font-size: clamp(3.4375rem, 2.3484rem + 5.125vw, 6rem);
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-transform: capitalize;
@@ -26,7 +27,7 @@ h1 {
     margin-left: -2px;
 }
 h2 {
-    font-size: 36px;
+    font-size: 28px;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-transform: capitalize;
@@ -137,17 +138,18 @@ header .line {
     padding: 90px 0 55px;
 }
 .cont-p {
-    padding-left: 25px;
+    padding-left: clamp(0rem, -0.9463rem + 3.5211vw, 1.5625rem);
 }
 .banner p {
     margin: 40px 2px 22px -2px;
+    font-size: 16px;
 }
 .b-imgs img {
-    width: 160px;
-    height: 160px;
-    border: 6px solid #117050;
+    width: clamp(5rem, 2.875rem + 10vw, 10rem);
+    height: clamp(5rem, 2.875rem + 10vw, 10rem);
+    border: clamp(0.1875rem, 0.1078rem + 0.375vw, 0.375rem) solid #117050;
     border-radius: 50%;
-    margin: 44px 18px;
+    margin: 44px clamp(0.5rem, 0.2344rem + 1.25vw, 1.125rem);
 }
 
 
@@ -169,10 +171,10 @@ header .line {
     grid-template-columns: repeat(2, 1fr);
 }
 .area1 .bar {
-    margin-top: 65px;
+    margin-top: clamp(1.875rem, 0.5502rem + 4.9296vw, 4.0625rem);
 }
 .area1-c {
-    padding: 0 100px;
+    padding: 0 clamp(1.25rem, -1.7782rem + 11.2676vw, 6.25rem);
 }
 .area1-c h2 {
     margin-top: 11px;
@@ -180,17 +182,17 @@ header .line {
 }
 .area1-q {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.6;
     font-style: italic;
 }
 .area1-t {
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.6;
 }
 .area1-c .button {
-    margin: 60px 0;
+    margin: clamp(2.5rem, 1.743rem + 2.8169vw, 3.75rem) 0;
 }
 .area1-i1 {
     height: 347px;
@@ -225,10 +227,10 @@ header .line {
     grid-template-columns: repeat(2, 1fr);
 }
 .area2 .bar {
-    margin-top: 90px;
+    margin-top: clamp(1.875rem, -0.3961rem + 8.4507vw, 5.625rem);
 }
 .area2-c {
-    padding: 0 110px 0 100px;
+    padding: 0 clamp(1.25rem, -2.1567rem + 12.6761vw, 6.875rem) 0 clamp(1.25rem, -1.7782rem + 11.2676vw, 6.25rem);
 }
 .area2-c h2 {
     margin-top: 11px;
@@ -240,7 +242,7 @@ header .line {
     line-height: 1.6;
 }
 .area2-c .button {
-    margin: 27px 0 90px;
+    margin: clamp(1.6875rem, 2.9921rem + -1.831vw, 2.5rem) 0 clamp(2.5rem, 0.6074rem + 7.0423vw, 5.625rem);
 }
 .area2-i1 {
     height: 453px;
@@ -275,7 +277,7 @@ header .line {
     grid-template-columns: repeat(2, 1fr);
 }
 .area3-c {
-    padding: 225px 120px 215px 100px;
+    padding: clamp(0.625rem, -7.5132rem + 30.2817vw, 14.0625rem) clamp(1.25rem, -2.5352rem + 14.0845vw, 7.5rem) clamp(0rem, -8.1382rem + 30.2817vw, 13.4375rem) clamp(1.25rem, -1.7782rem + 11.2676vw, 6.25rem);
     background-image: url(../images/bg2.jpg);
     background-size: cover;
     background-position: left;
@@ -319,7 +321,7 @@ header .line {
     background-color: #e8e9ee;
 }
 .area4-c {
-    padding: 175px 0 0 100px;
+    padding: 30px clamp(0rem, 2.007rem + -2.8169vw, 1.25rem) 0 clamp(1.25rem, -1.7782rem + 11.2676vw, 6.25rem);
     background-size: cover;
     background-position: left;
 }
@@ -333,7 +335,7 @@ header .line {
     line-height: 1.6;
 }
 .area4-c .button {
-    margin: 38px 0;
+    margin: clamp(2.375rem, 2.5757rem + -0.2817vw, 2.5rem) 0;
 }
 .area4-i1 {
     height: 770px;
@@ -396,4 +398,45 @@ footer a {
 }
 footer a:hover {
     color:rgb(81, 179, 245);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .area1 {
+        grid-template-columns: 3fr 2fr;
+    }
+    .area2 {
+        grid-template-columns: 2fr 3fr;
+    }
+    .area3 {
+        grid-template-columns: 3fr 2fr;
+    }
+    
+}
+@media (max-width: 430px) {
+    
+    .b-imgs {
+        display: flex;
+        justify-content: center;
+    }
+    .area1, .area2, .area3, .area4 {
+        grid-template-columns: 1fr;
+    }
+    .area3-i1, .area4-i1 {
+        display: none;
+    }
+
 }
