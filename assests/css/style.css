@@ -27,17 +27,17 @@ h1 {
     margin-left: -2px;
 }
 h2 {
-    font-size: 28px;
+    font-size: clamp(1.875rem, 1.6479rem + 0.8451vw, 2.25rem);
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-transform: capitalize;
     line-height: 1.2;
 }
 .button {
-    font-size: 16px;
+    font-size: clamp(0.875rem, 0.7993rem + 0.2817vw, 1rem);
     letter-spacing: 1px;
     line-height: 1.4;
-    padding: 10px 30px;
+    padding: clamp(0.4375rem, 0.3239rem + 0.4225vw, 0.625rem) clamp(1.0625rem, 0.5704rem + 1.831vw, 1.875rem);
     border-radius: 4px;
     background-color: transparent;
     border: solid 2px #454545;
@@ -88,12 +88,12 @@ header .line {
     align-items: center;
 }
 .h-search input {
-    font-size: 16px;
-    padding: 7px 13px;
+    font-size: clamp(0.75rem, 0.6438rem + 0.5vw, 1rem);
+    padding: clamp(0.25rem, 0.1703rem + 0.375vw, 0.4375rem) clamp(0.5625rem, 0.4563rem + 0.5vw, 0.8125rem);
     border: 1px solid #adadad;
     color: #444;
     outline: 0;
-    width: 260px;
+    width: clamp(7.5rem, 3.7813rem + 17.5vw, 16.25rem);
     font-family: inherit;
 }
 .h-search input::placeholder {
@@ -107,13 +107,13 @@ header .line {
     outline: 0;
 }
 .h-search button img {
-    width: 16px;
-    height: 16px;
+    width: clamp(0.75rem, 0.6438rem + 0.5vw, 1rem);
+    height: clamp(0.75rem, 0.6438rem + 0.5vw, 1rem);
 }
 .h-menu {
     display: flex;
-    height: 28px;
-    margin-left: 60px;
+    height: clamp(1.5rem, 1.3938rem + 0.5vw, 1.75rem);
+    margin-left: clamp(1.875rem, 1.0781rem + 3.75vw, 3.75rem);
     cursor: pointer;
 }
 
@@ -142,7 +142,7 @@ header .line {
 }
 .banner p {
     margin: 40px 2px 22px -2px;
-    font-size: 16px;
+    font-size: clamp(0.875rem, 0.7993rem + 0.2817vw, 1rem);
 }
 .b-imgs img {
     width: clamp(5rem, 2.875rem + 10vw, 10rem);
@@ -182,20 +182,20 @@ header .line {
 }
 .area1-q {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: clamp(0.875rem, 0.7993rem + 0.2817vw, 1rem);
     line-height: 1.6;
     font-style: italic;
 }
 .area1-t {
-    margin-top: 30px;
-    font-size: 14px;
+    margin-top: clamp(1.25rem, 0.8715rem + 1.4085vw, 1.875rem);
+    font-size: clamp(0.875rem, 0.7993rem + 0.2817vw, 1rem);
     line-height: 1.6;
 }
 .area1-c .button {
     margin: clamp(2.5rem, 1.743rem + 2.8169vw, 3.75rem) 0;
 }
 .area1-i1 {
-    height: 347px;
+    height: clamp(12.5rem, 5.2015rem + 34.3458vw, 21.6875rem);
     background-image: url(../images/f2.jpg);
     background-size: cover;
     background-position: center;
@@ -237,8 +237,8 @@ header .line {
     padding-right: 10px;
 }
 .area2-t {
-    margin-top: 27px;
-    font-size: 16px;
+    margin-top: clamp(1.25rem, 0.985rem + 0.9859vw, 1.6875rem);
+    font-size: clamp(0.875rem, 0.7993rem + 0.2817vw, 1rem);
     line-height: 1.6;
 }
 .area2-c .button {
@@ -288,7 +288,7 @@ header .line {
 }
 .area3-t {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: clamp(0.875rem, 0.7993rem + 0.2817vw, 1rem);
     line-height: 1.6;
 }
 .area3-c .button {
@@ -330,8 +330,8 @@ header .line {
     padding-right: 10px;
 }
 .area4-t {
-    margin-top: 27px;
-    font-size: 16px;
+    margin-top: clamp(1.25rem, 0.985rem + 0.9859vw, 1.6875rem);
+    font-size: clamp(0.875rem, 0.7993rem + 0.2817vw, 1rem);
     line-height: 1.6;
 }
 .area4-c .button {
@@ -359,10 +359,10 @@ header .line {
 
 
 .area5 {
-    height: 600px;
+    height: clamp(21.875rem, 12.412rem + 35.2113vw, 37.5rem);
     background-image: url(../images/bg4.jpg);
     background-size: cover;
-    background-position: left;
+    background-position: left
 }
 
 
@@ -384,12 +384,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    padding: clamp(1.25rem, 0.493rem + 2.8169vw, 2.5rem);
 }
 footer span {
     color: #FFF;
     font-size: 14px;
-    padding: 15px;
+    padding: clamp(0.625rem, 0.4357rem + 0.7042vw, 0.9375rem);
     font-style: italic;
 }
 footer a { 
@@ -424,10 +424,17 @@ footer a:hover {
     .area3 {
         grid-template-columns: 3fr 2fr;
     }
+    .area5 {
+        background-position: right;
+    }
+
     
 }
 @media (max-width: 430px) {
-    
+
+    .button {
+        border-width: 1px;
+    }
     .b-imgs {
         display: flex;
         justify-content: center;
